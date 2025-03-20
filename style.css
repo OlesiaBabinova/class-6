@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*This is CSS reset to clear of default browser styles */
+
+
+
+
+/*styles for our website start here */
+
+#page_wrapper{
+    border: 1px solid red; 
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding: 30px 40px;
+    text-align: center; 
+    align-items: center;
+}
+
+
+    @media(max-width: 745px) {
+        .menu {display: none;}
+
+        .banner {
+            width: 80%;
+        }
+    }
+
+
+
+    .logo {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+    }
+    nav ul li {
+        display: inline;
+        font-size: 14px;
+    }
+    button {
+        padding: 10px 15px;
+        border: 2px solid black;
+        border-radius: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: lightblue;
+    }
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+    color: black;
+}
+    .hero {
+        padding: 40px;
+    }
+    .hero img {
+        max-width: 100%;
+        aspect-ratio: 3/1;
+        border-radius: 20px;
+    }
+    .hero h1 {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 60px;
+    }
+    .hero p {
+        font-size: 20px;
+    }
+    .button {
+        background-color: lightblue;
+        padding: 12px 25px;
+        border-radius: 20px;
+        border: 2px solid black;;
+        font-weight: bold;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+    .section-title {
+        background-color: lightblue;
+        padding: 30px;
+        margin-top: 40px;
+        border-radius: 10px;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .projects {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 10px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project-card {
+        background: lightblue;
+        border-radius: 10px;
+        padding: 15px;
+        width: 30%;
+        text-align: left;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .project-card img {
+        width: 100%;
+        border-radius: 20px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .project-card h3 {
+        margin: 15px 0 5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .project-card p {
+        color: black;
+        font-size: 16px;
+    }
+    
