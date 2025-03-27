@@ -2,15 +2,24 @@
 <html lang="en"> 
     <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1>">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
     <title> This is my first Web Page!</title>
     <Link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
+    <script src="js/scripts.js"></script>
+
     </head>
 
 
     <body>
        
-
+        <div id="test">test 1 </div>
 
 
         
@@ -20,7 +29,7 @@
             Babinova
         </div>
 
-        <nav>
+        <nav class="menu">
             <ul>
                 <li>About Me</li>
                 <li>My Works</li>
@@ -28,7 +37,15 @@
             </ul>
         </nav>
 
-        <button>
+        <nav id="mobile-menu">
+            <ul>
+                <li>About Me</li>
+                <li>My Works</li>
+                <li>Work Process</li>
+            </ul>
+        </nav>
+
+        <button id="cta-button">
             Contact Me
         </button>
     </header>
@@ -47,19 +64,26 @@
         <div class="projects">
             <div class="project-card">
                 <img src="img/sbb.jpg" alt="Project Saint P">
+                <div class="card-text">
                 <h3>Project Saint P</h3>
                 <p>Building Company</p>
             </div>
+            </div>
             <div class="project-card">
                 <img src="img/bakery.jpg" alt="Volcheck Bakery">
+                <div class="card-text">
                 <h3>Volcheck Bakery</h3>
                 <p>Bakery Company</p>
+            </div>
             </div>
 
             <div class="project-card">
                 <img src="img/library.jpg" alt="National Library">
+                <div class="card-text">
                 <h3>National Library</h3>
                 <p>Boston</p>
             </div>
+            </div>
+            
     </body>
     <html> 
