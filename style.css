@@ -50,14 +50,14 @@ table {
 /*styles for our website start here */
 
 #page_wrapper{
-    border: 1px solid red; 
+    border: 1px solid lightblue; 
     max-width: 1280px;
     margin: 0 auto;
     font-family:'Plus Jakarta Sans';
 }
 
 header{
-    border: 1px solid blue;
+    border: 1px solid lightblue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -115,7 +115,7 @@ header{
     .button {
         background-color: lightblue;
         padding: 12px 25px;
-        border-radius: 20px;
+        border-radius: 15px;
         border: 2px solid black;;
         font-weight: bold;
         margin-top: 40px;
@@ -167,6 +167,157 @@ header{
         padding: 15px;
     }
 
+   /* Wrapper for Work Process and Contact sections */
+.process-contact-wrapper {
+    display: flex;
+    justify-content: center; /* Makes sections spread out evenly */
+    flex-wrap: wrap;
+    max-width: 1280px; /* SAME WIDTH AS THE PAGE */
+    margin: 0px auto;
+    padding: 30px 40px; /* Consistent padding */
+}
+
+/* Work Process Section */
+.work-process {
+    background: linear-gradient(to bottom, #c1dbf1, rgb(154, 203, 219));
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%; /* Makes it equal in width */
+    min-width: 600px; /* Prevents sections from getting too small */
+    
+}
+
+.work-process h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.process-step {
+    margin-bottom: 15px;
+}
+
+.process-step h3 {
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.process-step .step-number {
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-step hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 5px 0;
+}
+
+.process-step p {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Contact Form Section */
+.contact {
+    background-color: #23535f;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%; /* Makes it equal in width */
+    min-width: 600px; /* Prevents sections from getting too small */
+    text-align: center;
+    
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #496569;
+    font-style: italic;
+}
+
+.contact textarea {
+    height: 100px;
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #496569;
+    font-style: italic;
+}
+
+.contact button {
+    background-color: #23535f;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact button:hover {
+    background-color: #ffffffaa;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .process-contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-process, .contact {
+        width: 100%; /* Make sections full-width on smaller screens */
+        min-width: unset; /* Allow sections to adjust freely */
+    }
+}
+
     #mobile-menu {
         display: none;
     }
@@ -176,5 +327,19 @@ header{
 
         .banner {
             width: 80%;
+        }
+    }
+
+    @media (max-width: 745px) {
+        .menu {display: none;}
+        #mobile-menu { display: block; }
+        
+        .projects {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .project-card {
+            width: 90%;
         }
     }
